@@ -59,15 +59,17 @@
 .section-depoimentos .row      { width:100%; float:left; }
 .depoimento     { font-family: 'Lato', sans-serif; position: relative; float: left; overflow: hidden; width:100%; color: #333; text-align: left; box-shadow: none !important; }
 .depoimento *   { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 .depoimento blockquote { font-family: 'Lato', sans-serif; margin: 0; display: block; border-radius: 8px; position: relative; background-color: #fafafa; padding: 30px 50px 65px 50px; font-size: 1.1em; font-style:italic; text-align:center; font-weight: 500; margin: 0 0 -50px; line-height: 1.6em; box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
 .depoimento blockquote:before,
 .depoimento blockquote:after  { font-family: 'FontAwesome';  content: "\201C"; position: absolute; font-size: 50px; opacity: 0.3; font-style: normal; }
 .depoimento blockquote:before { top: 35px; left: 20px; }
 .depoimento blockquote:after  { content: "\201D";  right: 20px; bottom: 35px; }
-.depoimento .author img {  max-width:100%; height:100px; width:100px; border-radius:50%; margin-bottom:15px; display:inline-block; z-index:1; position:relative; }
+
+.depoimento .author img /*imagens dos clientes*/ {  max-width:100%; height:100px; width:100px; border-radius:50%; margin-bottom:15px; display:inline-block; z-index:1; position:relative; }
 .depoimento .author         { margin: 0; text-transform: uppercase; text-align: center; color: #ffffff; }
-.depoimento .author h5      { color: #5ac683; opacity: 0.8; margin: 0; font-family: 'Lato', sans-serif; font-weight: 800;}
-.depoimento .author h5 span { font-family: 'Lato', sans-serif; font-weight: 400; text-transform: none; display: block; }
+.depoimento .author h5   /*Nome do cliente*/   { color: #5ac683; opacity: 0.8; margin: 0; font-family: 'Lato', sans-serif; font-weight: 800;}
+.depoimento .author h5 span  /*aumentando a largura do nome*/ { font-family: 'Lato', sans-serif; font-weight: 400; text-transform: none; display: block; }
 
 /*Controle da Paginação carrossel*/
 .boxSlide       { width:100%; overflow:hidden; margin:auto; }
@@ -135,7 +137,7 @@ ul.bxslider     { list-style: none; }
 .accordion label         { cursor:pointer; position:relative; display:flex; align-items:center; }
 .accordion div.texto     { max-height:0px; overflow: hidden; transition:max-height 0.5s; background-color:#ffffff; }
 .accordion div.texto p   { padding:1em; position: relative; z-index: 1; font-family: 'Lato', sans-serif; }
-.accordion input:checked ~ h3 label::before { transform: rotate(90deg); transition: .5s; border: 7px solid transparent; border-left-width: 7px; border-left-style: solid; border-left-color: transparent; border-left: 8px solid #007dfe; margin-right: 7px; }
+.accordion input:checked ~ h3 label::before { transform: rotate(90deg); transition: .5s; border: 7px solid transparent; border-left-width: 7px; border-left-style: solid; border-left-color: transparent; border-left: 8px solid #5ac683; margin-right: 7px; }
 .accordion input:checked ~ h3 ~ div.texto   { max-height:200px; }
 .accordion a { color:#5ac683; }
 
